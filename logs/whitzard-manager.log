@@ -1,0 +1,288 @@
+2020-11-29 16:38:35.469 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-29 16:38:35.627 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-29 16:38:37.037 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-29 16:38:37.125 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-29 16:38:37.152 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-29 16:38:37.154 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-29 16:38:37.165 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-29 16:38:39.239 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 16:38:39.244 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 16:38:39.288 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 19ms. Found 0 Redis repository interfaces.
+2020-11-29 16:38:39.378 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:38:39.684 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=c03431d5-de43-302e-abc7-dd79c5db2878
+2020-11-29 16:38:40.858 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-29 16:38:40.881 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:38:40.883 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-29 16:38:40.883 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 16:38:41.327 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-29 16:38:41.328 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 4128 ms
+2020-11-29 16:38:41.566 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:38:41.567 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:38:43.223 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-29 16:38:43.224 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-29 16:38:43.226 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-29 16:38:43.530 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-29 16:38:43.740 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 16:38:43.754 [main] INFO  com.newpi.data.config.Swagger2Config[39] - applicationName:whitzard-manager
+2020-11-29 16:38:43.790 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:38:43.790 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:38:43.798 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:38:43.799 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:38:44.067 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:38:44.264 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:38:44.608 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:38:44.673 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-29 16:38:44.682 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-29 16:38:44.826 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-29 16:38:44.870 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 192.168.1.141:8010 register finished
+2020-11-29 16:38:44.874 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-29 16:38:44.903 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-29 16:38:44.994 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-29 16:38:45.388 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 12.721 seconds (JVM running for 19.926)
+2020-11-29 16:38:45.407 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:38:45.410 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-29 16:38:45.410 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:38:45.410 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-29 16:38:45.411 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:38:45.411 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-29 16:38:45.434 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:38:50.689 [http-nio-8010-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 16:38:50.689 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+2020-11-29 16:38:50.708 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[547] - Completed initialization in 19 ms
+2020-11-29 16:38:50.891 [http-nio-8010-exec-2] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver[199] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present]
+2020-11-29 16:38:56.056 [http-nio-8010-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver[199] - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'name' is not present]
+2020-11-29 16:39:15.162 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:39:44.675 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:39:49.562 [http-nio-8010-exec-6] INFO  com.newpi.data.log.WebLogAspect[66] - {"method":"GET","result":"hello","spendTime":9,"startTime":1606639189525,"url":"http://localhost:8010/hello/sayHello","user":"liujie3"}
+2020-11-29 16:40:14.203 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:40:43.763 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:41:13.277 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:41:48.282 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:42:56.886 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:42:57.074 [com.alibaba.nacos.naming.beat.sender] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"serviceName":"dev@@whitzard-manager","weight":1.0}
+2020-11-29 16:43:44.654 [com.alibaba.nacos.naming.beat.sender] WARN  com.alibaba.nacos.client.naming[94] - failed to request http://nacos.k8sml.test.yidian-inc.com/nacos/v1/ns/instance?app=unknown&metadata=%7B%22preserved.register.source%22%3A%22SPRING_CLOUD%22%7D&ip=192.168.1.141&weight=1.0&ephemeral=true&serviceName=dev%40%40whitzard-manager&encoding=UTF-8&groupName=dev&namespaceId=76ee77bd-b7d7-4a9d-94d2-fab208c237be&port=8010&enable=true&healthy=true&clusterName=DEFAULT from 10.103.18.42
+2020-11-29 16:43:56.943 [com.alibaba.nacos.naming.beat.sender] ERROR com.alibaba.nacos.client.naming[102] - [NA] failed to request 
+java.net.SocketTimeoutException: null
+	at java.net.SocksSocketImpl.remainingMillis(SocksSocketImpl.java:111)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.naming.net.HttpClient.request(HttpClient.java:86)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.callServer(NamingProxy.java:433)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:468)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:401)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.reqAPI(NamingProxy.java:397)
+	at com.alibaba.nacos.client.naming.net.NamingProxy.registerService(NamingProxy.java:212)
+	at com.alibaba.nacos.client.naming.beat.BeatReactor$BeatTask.run(BeatReactor.java:133)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$201(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:293)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-29 16:44:40.656 [http-nio-8010-exec-9] INFO  com.newpi.data.log.WebLogAspect[66] - {"method":"GET","result":"hello","spendTime":0,"startTime":1606639291436,"url":"http://localhost:8010/hello/sayHello","user":"liujie3"}
+2020-11-29 16:44:40.658 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:44:40.951 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:44:40.962 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-29 16:44:40.963 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:192.168.1.141:8010 from beat map.
+2020-11-29 16:44:40.964 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-29 16:44:41.318 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-29 16:44:41.321 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:45:22.319 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-29 16:45:22.383 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-29 16:45:22.465 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-29 16:45:22.481 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-29 16:45:22.497 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-29 16:45:22.499 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-29 16:45:22.510 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-29 16:45:24.190 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 16:45:24.193 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 16:45:24.236 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-11-29 16:45:24.334 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:45:24.581 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=c03431d5-de43-302e-abc7-dd79c5db2878
+2020-11-29 16:45:25.312 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-29 16:45:25.325 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:45:25.325 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-29 16:45:25.326 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 16:45:25.580 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-29 16:45:25.581 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 3026 ms
+2020-11-29 16:45:25.807 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:45:25.807 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:45:27.007 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-29 16:45:27.008 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-29 16:45:27.009 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-29 16:45:27.301 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-29 16:45:27.487 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 16:45:27.494 [main] INFO  com.newpi.data.config.Swagger2Config[39] - applicationName:whitzard-manager
+2020-11-29 16:45:27.544 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:45:27.544 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:45:27.552 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:45:27.552 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:45:27.734 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:45:27.904 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:45:28.227 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:45:28.276 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-29 16:45:28.281 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-29 16:45:28.386 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-29 16:45:28.427 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 192.168.1.141:8010 register finished
+2020-11-29 16:45:28.430 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-29 16:45:28.475 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-29 16:45:28.561 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-29 16:45:28.758 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 8.779 seconds (JVM running for 10.782)
+2020-11-29 16:45:28.775 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:45:28.776 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-29 16:45:28.777 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:45:28.777 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-29 16:45:28.777 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:45:28.777 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-29 16:45:28.800 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:45:41.192 [http-nio-8010-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 16:45:41.193 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+2020-11-29 16:45:41.347 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[547] - Completed initialization in 154 ms
+2020-11-29 16:46:14.227 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:46:57.482 [com.alibaba.nacos.naming.beat.sender] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"serviceName":"dev@@whitzard-manager","weight":1.0}
+2020-11-29 16:46:57.580 [http-nio-8010-exec-2] INFO  com.newpi.data.log.WebLogAspect[66] - {"method":"sayHello","result":"hello","spendTime":16,"startTime":1606639541516,"url":"http://localhost:8010/hello/sayHello","user":"liujie3"}
+2020-11-29 16:46:58.055 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:46:58.058 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-29 16:46:58.059 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:192.168.1.141:8010 from beat map.
+2020-11-29 16:46:58.060 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-29 16:46:58.149 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-29 16:46:58.151 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:48:53.623 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-29 16:48:53.773 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-29 16:48:53.941 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-29 16:48:53.970 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-29 16:48:53.996 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-29 16:48:53.998 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-29 16:48:54.009 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-29 16:48:55.932 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 16:48:55.936 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 16:48:55.978 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-29 16:48:56.099 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:48:56.362 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=c03431d5-de43-302e-abc7-dd79c5db2878
+2020-11-29 16:48:57.135 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-29 16:48:57.147 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:48:57.148 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-29 16:48:57.148 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 16:48:57.392 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-29 16:48:57.392 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 3333 ms
+2020-11-29 16:48:57.602 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:48:57.603 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:48:58.767 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-29 16:48:58.768 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-29 16:48:58.770 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-29 16:48:59.025 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-29 16:48:59.187 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 16:48:59.190 [main] INFO  com.newpi.data.config.Swagger2Config[39] - applicationName:whitzard-manager
+2020-11-29 16:48:59.224 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:48:59.225 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:48:59.233 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:48:59.233 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:48:59.520 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:48:59.701 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:49:00.051 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:49:00.099 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-29 16:49:00.104 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-29 16:49:00.221 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-29 16:49:00.256 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 192.168.1.141:8010 register finished
+2020-11-29 16:49:00.267 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-29 16:49:00.292 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-29 16:49:00.378 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-29 16:49:00.522 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 8.527 seconds (JVM running for 10.645)
+2020-11-29 16:49:00.536 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:49:00.537 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-29 16:49:00.537 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:49:00.538 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-29 16:49:00.538 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:49:00.539 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-29 16:49:00.558 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:49:10.492 [http-nio-8010-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 16:49:10.492 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+2020-11-29 16:49:10.543 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[547] - Completed initialization in 50 ms
+2020-11-29 16:49:10.771 [http-nio-8010-exec-2] INFO  com.newpi.data.log.WebLogAspect[67] - {"method":"sayHello","requestType":"GET","result":"hello","spendTime":11,"startTime":1606639750733,"url":"http://localhost:8010/hello/sayHello","user":"liujie3"}
+2020-11-29 16:49:30.326 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:49:59.840 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:51:29.496 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:53:46.485 [com.alibaba.nacos.naming.beat.sender] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"serviceName":"dev@@whitzard-manager","weight":1.0}
+2020-11-29 16:54:59.796 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:55:22.439 [http-nio-8010-exec-3] INFO  com.newpi.data.log.WebLogAspect[67] - {"method":"sayHello","requestType":"GET","result":"hello","spendTime":1,"startTime":1606639802809,"url":"http://localhost:8010/hello/sayHello","user":"liujie3"}
+2020-11-29 16:55:29.352 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:56:03.874 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:56:42.521 [http-nio-8010-exec-4] INFO  com.newpi.data.log.WebLogAspect[67] - {"method":"sayHello","requestType":"GET","result":"hello","spendTime":0,"startTime":1606640137398,"url":"http://localhost:8010/hello/sayHello"}
+2020-11-29 16:56:43.697 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:57:13.211 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:57:31.195 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:57:31.199 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-29 16:57:31.200 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:192.168.1.141:8010 from beat map.
+2020-11-29 16:57:31.200 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-29 16:57:31.216 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-29 16:57:31.218 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:57:58.420 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-29 16:57:58.475 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-29 16:57:58.556 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-29 16:57:58.572 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-29 16:57:58.587 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-29 16:57:58.589 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-29 16:57:58.598 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-29 16:58:00.092 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-29 16:58:00.096 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-29 16:58:00.134 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 20ms. Found 0 Redis repository interfaces.
+2020-11-29 16:58:00.217 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:58:00.438 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=c03431d5-de43-302e-abc7-dd79c5db2878
+2020-11-29 16:58:01.400 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-29 16:58:01.415 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:58:01.417 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-29 16:58:01.417 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-29 16:58:01.677 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-29 16:58:01.679 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 3024 ms
+2020-11-29 16:58:02.083 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:58:02.084 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-29 16:58:03.218 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-29 16:58:03.219 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-29 16:58:03.221 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-29 16:58:03.541 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-29 16:58:03.722 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-29 16:58:03.727 [main] INFO  com.newpi.data.config.Swagger2Config[39] - applicationName:whitzard-manager
+2020-11-29 16:58:03.761 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:58:03.762 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:58:03.775 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-29 16:58:03.776 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-29 16:58:03.945 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-29 16:58:04.133 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:58:04.428 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-29 16:58:04.467 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-29 16:58:04.472 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-29 16:58:04.576 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-29 16:58:04.609 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 192.168.1.141:8010 register finished
+2020-11-29 16:58:04.614 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-29 16:58:04.639 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-29 16:58:04.803 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-29 16:58:04.990 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 9.923 seconds (JVM running for 12.314)
+2020-11-29 16:58:05.002 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:58:05.004 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-29 16:58:05.004 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:58:05.005 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-29 16:58:05.005 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-29 16:58:05.005 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-29 16:58:05.024 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:58:07.928 [http-nio-8010-exec-2] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-11-29 16:58:07.929 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[525] - Initializing Servlet 'dispatcherServlet'
+2020-11-29 16:58:07.948 [http-nio-8010-exec-2] INFO  org.springframework.web.servlet.DispatcherServlet[547] - Completed initialization in 19 ms
+2020-11-29 16:58:34.726 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-29 16:58:48.306 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-29 16:58:48.309 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-29 16:58:48.309 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:192.168.1.141:8010 from beat map.
+2020-11-29 16:58:48.310 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-29 16:58:48.323 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-29 16:58:48.325 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'

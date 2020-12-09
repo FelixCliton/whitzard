@@ -1,0 +1,971 @@
+2020-11-27 18:24:43.102 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 18:24:43.212 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 18:24:43.303 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 18:24:43.318 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 18:24:43.333 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 18:24:43.336 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 18:24:43.358 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 18:24:44.626 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 46 common frames omitted
+2020-11-27 18:24:44.631 [main] WARN  org.springframework.boot.SpringApplication[819] - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 29 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 common frames omitted
+2020-11-27 19:09:29.772 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:09:29.954 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:09:30.076 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:09:30.092 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:09:30.104 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:09:30.107 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:09:30.131 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:09:32.184 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 46 common frames omitted
+2020-11-27 19:09:32.215 [main] WARN  org.springframework.boot.SpringApplication[819] - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:19)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 29 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 common frames omitted
+2020-11-27 19:12:12.421 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:12:12.621 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:12:12.773 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:12:12.816 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:12:12.843 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:12:12.846 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:12:12.890 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:12:14.962 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 46 common frames omitted
+2020-11-27 19:12:14.988 [main] WARN  org.springframework.boot.SpringApplication[819] - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 29 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 common frames omitted
+2020-11-27 19:16:40.096 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:16:40.248 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:16:40.379 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:16:40.399 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:16:40.415 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:16:40.418 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:16:40.445 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:16:42.360 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 46 common frames omitted
+2020-11-27 19:16:42.369 [main] WARN  org.springframework.boot.SpringApplication[819] - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.RedisConfig] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NoClassDefFoundError: org/springframework/data/redis/serializer/RedisSerializer
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 29 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.data.redis.serializer.RedisSerializer
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 common frames omitted
+2020-11-27 19:37:17.682 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:37:17.805 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:37:17.907 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:37:17.925 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:37:17.943 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:37:17.945 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:37:17.971 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:37:19.767 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:37:19.955 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=86874cb6-d2b9-3efb-9092-7802ffe4186e
+2020-11-27 19:37:20.528 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-27 19:37:20.569 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:37:20.570 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-27 19:37:20.571 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-27 19:37:20.740 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-27 19:37:20.741 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 2709 ms
+2020-11-27 19:37:21.034 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:37:21.035 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:37:21.249 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:37:21.250 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:37:21.268 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:37:21.269 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:37:21.701 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-27 19:37:22.036 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 19:37:22.051 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-27 19:37:22.053 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-27 19:37:22.056 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-27 19:37:22.085 [main] ERROR com.alibaba.cloud.nacos.NacosDiscoveryProperties[523] - create naming service error!properties=NacosDiscoveryProperties{serverAddr='http://nacos.k8sml.test.yidian-inc.com', endpoint='', namespace='76ee77bd-b7d7-4a9d-94d2-fab208c237be', watchDelay=30000, logName='', service='whitzard-manager', weight=1.0, clusterName='DEFAULT', group='dev', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='10.60.104.58', networkInterface='', port=-1, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null},e=,
+com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:48)
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:76)
+	at com.alibaba.cloud.nacos.NacosDiscoveryProperties.namingServiceInstance(NacosDiscoveryProperties.java:520)
+	at com.alibaba.cloud.nacos.endpoint.NacosDiscoveryEndpointAutoConfiguration.nacosDiscoveryHealthIndicator(NacosDiscoveryEndpointAutoConfiguration.java:56)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:45)
+	... 37 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/fastjson/TypeReference
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:96)
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:85)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.fastjson.TypeReference
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 44 common frames omitted
+2020-11-27 19:37:22.097 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-27 19:37:22.098 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-27 19:37:22.100 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-27 19:37:22.120 [main] ERROR com.alibaba.cloud.nacos.NacosDiscoveryProperties[523] - create naming service error!properties=NacosDiscoveryProperties{serverAddr='http://nacos.k8sml.test.yidian-inc.com', endpoint='', namespace='76ee77bd-b7d7-4a9d-94d2-fab208c237be', watchDelay=30000, logName='', service='whitzard-manager', weight=1.0, clusterName='DEFAULT', group='dev', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='10.60.104.58', networkInterface='', port=-1, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null},e=,
+com.alibaba.nacos.api.exception.NacosException: java.lang.reflect.InvocationTargetException
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:48)
+	at com.alibaba.nacos.api.NacosFactory.createNamingService(NacosFactory.java:76)
+	at com.alibaba.cloud.nacos.NacosDiscoveryProperties.namingServiceInstance(NacosDiscoveryProperties.java:520)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.<init>(NacosServiceRegistry.java:47)
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistryAutoConfiguration.nacosServiceRegistry(NacosServiceRegistryAutoConfiguration.java:51)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:635)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:538)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.reflect.InvocationTargetException: null
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at com.alibaba.nacos.api.naming.NamingFactory.createNamingService(NamingFactory.java:45)
+	... 65 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: com/alibaba/fastjson/TypeReference
+	at com.alibaba.nacos.client.naming.NacosNamingService.init(NacosNamingService.java:96)
+	at com.alibaba.nacos.client.naming.NacosNamingService.<init>(NacosNamingService.java:85)
+	... 70 common frames omitted
+Caused by: java.lang.ClassNotFoundException: com.alibaba.fastjson.TypeReference
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 72 common frames omitted
+2020-11-27 19:37:22.657 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-27 19:37:22.734 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:37:22.800 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-27 19:37:22.803 [main] ERROR c.a.cloud.nacos.registry.NacosServiceRegistry[69] - nacos registry, whitzard-manager register failed...NacosRegistration{nacosDiscoveryProperties=NacosDiscoveryProperties{serverAddr='http://nacos.k8sml.test.yidian-inc.com', endpoint='', namespace='76ee77bd-b7d7-4a9d-94d2-fab208c237be', watchDelay=30000, logName='', service='whitzard-manager', weight=1.0, clusterName='DEFAULT', group='dev', namingLoadCacheAtStart='false', metadata={preserved.register.source=SPRING_CLOUD}, registerEnabled=true, ip='10.60.104.58', networkInterface='', port=8010, secure=false, accessKey='', secretKey='', heartBeatInterval=null, heartBeatTimeout=null, ipDeleteTimeout=null}},
+java.lang.NullPointerException: null
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:64)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:239)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:76)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:138)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:46)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+2020-11-27 19:37:22.806 [main] WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.NullPointerException
+2020-11-27 19:37:22.810 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-27 19:37:22.818 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Pausing ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:37:22.829 [main] INFO  org.apache.catalina.core.StandardService[173] - Stopping service [Tomcat]
+2020-11-27 19:37:22.851 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Stopping ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:37:22.887 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Destroying ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:37:22.912 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-27 19:37:22.918 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is java.lang.NullPointerException
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NullPointerException: null
+	at com.alibaba.cloud.nacos.registry.NacosServiceRegistry.register(NacosServiceRegistry.java:64)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.register(AbstractAutoServiceRegistration.java:239)
+	at com.alibaba.cloud.nacos.registry.NacosAutoServiceRegistration.register(NacosAutoServiceRegistration.java:76)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:138)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.servlet.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:46)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	... 22 common frames omitted
+2020-11-27 19:39:01.196 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:39:01.315 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:39:01.413 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:39:01.434 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:39:01.448 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:39:01.459 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:39:01.492 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:39:03.524 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:39:03.729 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=86874cb6-d2b9-3efb-9092-7802ffe4186e
+2020-11-27 19:39:04.403 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-27 19:39:04.445 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:39:04.448 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-27 19:39:04.453 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-27 19:39:04.670 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-27 19:39:04.671 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 3102 ms
+2020-11-27 19:39:05.020 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:39:05.022 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:39:05.225 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:39:05.226 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:39:05.242 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:39:05.243 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:39:05.802 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-27 19:39:06.206 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 19:39:06.223 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-27 19:39:06.225 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-27 19:39:06.231 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-27 19:39:06.879 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-27 19:39:06.980 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:39:07.065 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-27 19:39:07.074 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.60.104.58","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-27 19:39:07.330 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-27 19:39:07.387 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 10.60.104.58:8010 register finished
+2020-11-27 19:39:07.428 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 8.481 seconds (JVM running for 9.237)
+2020-11-27 19:39:07.520 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:39:07.525 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-27 19:39:07.526 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:39:07.526 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-27 19:39:07.527 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:39:07.528 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-27 19:39:07.548 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-27 19:39:16.814 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 19:39:16.820 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-27 19:39:16.821 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:10.60.104.58:8010 from beat map.
+2020-11-27 19:39:16.822 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-27 19:39:16.832 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-27 19:39:16.834 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-27 19:42:01.852 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:42:01.983 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:42:02.101 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:42:02.116 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:42:02.128 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:42:02.131 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:42:02.156 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:42:03.542 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+java.lang.IllegalStateException: Error processing condition on org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration.propertySourcesPlaceholderConfigurer
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:60)
+	at org.springframework.context.annotation.ConditionEvaluator.shouldSkip(ConditionEvaluator.java:108)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForBeanMethod(ConfigurationClassBeanDefinitionReader.java:184)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitionsForConfigurationClass(ConfigurationClassBeanDefinitionReader.java:144)
+	at org.springframework.context.annotation.ConfigurationClassBeanDefinitionReader.loadBeanDefinitions(ConfigurationClassBeanDefinitionReader.java:120)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:331)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.Swagger2Config] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.collectBeanNamesForType(OnBeanCondition.java:238)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:231)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getBeanNamesForType(OnBeanCondition.java:221)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchingBeans(OnBeanCondition.java:169)
+	at org.springframework.boot.autoconfigure.condition.OnBeanCondition.getMatchOutcome(OnBeanCondition.java:144)
+	at org.springframework.boot.autoconfigure.condition.SpringBootCondition.matches(SpringBootCondition.java:47)
+	... 26 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/service/ApiInfo
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 42 common frames omitted
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.service.ApiInfo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 46 common frames omitted
+2020-11-27 19:42:03.557 [main] WARN  org.springframework.boot.SpringApplication[819] - Unable to close ApplicationContext
+java.lang.IllegalStateException: Failed to introspect Class [com.newpi.data.config.Swagger2Config] from ClassLoader [org.springframework.boot.loader.LaunchedURLClassLoader@377dca04]
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:481)
+	at org.springframework.util.ReflectionUtils.doWithMethods(ReflectionUtils.java:358)
+	at org.springframework.util.ReflectionUtils.getUniqueDeclaredMethods(ReflectionUtils.java:414)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.lambda$getTypeForFactoryMethod$2(AbstractAutowireCapableBeanFactory.java:742)
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.getTypeForFactoryMethod(AbstractAutowireCapableBeanFactory.java:741)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.determineTargetType(AbstractAutowireCapableBeanFactory.java:680)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:648)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.isFactoryBean(AbstractBeanFactory.java:1614)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doGetBeanNamesForType(DefaultListableBeanFactory.java:523)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanNamesForType(DefaultListableBeanFactory.java:495)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeansOfType(DefaultListableBeanFactory.java:612)
+	at org.springframework.context.support.AbstractApplicationContext.getBeansOfType(AbstractApplicationContext.java:1243)
+	at org.springframework.boot.SpringApplication.getExitCodeFromMappedException(SpringApplication.java:880)
+	at org.springframework.boot.SpringApplication.getExitCodeFromException(SpringApplication.java:868)
+	at org.springframework.boot.SpringApplication.handleExitCode(SpringApplication.java:855)
+	at org.springframework.boot.SpringApplication.handleRunFailure(SpringApplication.java:806)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:325)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardManager.main(WhitzardManager.java:18)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: java.lang.NoClassDefFoundError: springfox/documentation/service/ApiInfo
+	at java.lang.Class.getDeclaredMethods0(Native Method)
+	at java.lang.Class.privateGetDeclaredMethods(Class.java:2701)
+	at java.lang.Class.getDeclaredMethods(Class.java:1975)
+	at org.springframework.util.ReflectionUtils.getDeclaredMethods(ReflectionUtils.java:463)
+	... 29 common frames omitted
+Caused by: java.lang.ClassNotFoundException: springfox.documentation.service.ApiInfo
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424)
+	at org.springframework.boot.loader.LaunchedURLClassLoader.loadClass(LaunchedURLClassLoader.java:151)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357)
+	... 33 common frames omitted
+2020-11-27 19:43:06.917 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 19:43:07.053 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 19:43:07.167 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 19:43:07.183 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 19:43:07.196 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 19:43:07.201 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 19:43:07.234 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 19:43:10.171 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-27 19:43:10.179 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-27 19:43:10.238 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 23ms. Found 0 Redis repository interfaces.
+2020-11-27 19:43:10.433 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:43:10.701 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=8435b01f-a3d9-3f8f-9791-ecf7b34e9bd2
+2020-11-27 19:43:11.424 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-27 19:43:11.439 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:43:11.440 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-27 19:43:11.441 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-27 19:43:11.565 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-27 19:43:11.565 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 4254 ms
+2020-11-27 19:43:11.893 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:43:11.894 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-27 19:43:14.369 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-27 19:43:14.377 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-27 19:43:14.383 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-27 19:43:14.770 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-27 19:43:14.980 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-27 19:43:14.986 [main] INFO  com.newpi.data.config.Swagger2Config[32] - applicationName:whitzard-manager
+2020-11-27 19:43:15.059 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:43:15.060 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:43:15.075 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 19:43:15.076 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 19:43:15.451 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-27 19:43:15.712 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 19:43:16.175 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-27 19:43:16.249 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-27 19:43:16.264 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.60.104.58","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-27 19:43:16.526 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-27 19:43:16.585 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 10.60.104.58:8010 register finished
+2020-11-27 19:43:16.603 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-27 19:43:16.703 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-27 19:43:16.870 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-27 19:43:17.184 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 12.648 seconds (JVM running for 13.479)
+2020-11-27 19:43:17.270 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:43:17.275 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-27 19:43:17.276 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:43:17.277 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-27 19:43:17.277 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 19:43:17.278 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-27 19:43:17.298 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-27 19:43:21.369 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 19:43:21.373 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-27 19:43:21.373 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:10.60.104.58:8010 from beat map.
+2020-11-27 19:43:21.374 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-27 19:43:21.392 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-27 19:43:21.395 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-27 20:30:45.410 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-27 20:30:45.511 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-27 20:30:45.623 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager] & group[dev]
+2020-11-27 20:30:45.638 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager.yaml] & group[dev]
+2020-11-27 20:30:45.655 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-manager-dev.yaml] & group[dev]
+2020-11-27 20:30:45.659 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-manager-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-manager,dev'}]
+2020-11-27 20:30:45.675 [main] INFO  com.newpi.data.WhitzardManager[655] - The following profiles are active: dev
+2020-11-27 20:30:49.328 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-27 20:30:49.336 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-27 20:30:49.504 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 105ms. Found 0 Redis repository interfaces.
+2020-11-27 20:30:49.642 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-27 20:30:49.925 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=60018e24-63f5-3b0a-b370-76671ad16e8b
+2020-11-27 20:30:50.532 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[108] - Tomcat initialized with port(s): 8010 (http)
+2020-11-27 20:30:50.562 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Initializing ProtocolHandler ["http-nio-8010"]
+2020-11-27 20:30:50.563 [main] INFO  org.apache.catalina.core.StandardService[173] - Starting service [Tomcat]
+2020-11-27 20:30:50.564 [main] INFO  org.apache.catalina.core.StandardEngine[173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+2020-11-27 20:30:50.703 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/][173] - Initializing Spring embedded WebApplicationContext
+2020-11-27 20:30:50.703 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext[285] - Root WebApplicationContext: initialization completed in 4966 ms
+2020-11-27 20:30:51.011 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-27 20:30:51.013 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-27 20:30:52.819 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-27 20:30:52.820 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-27 20:30:52.822 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-27 20:30:53.102 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 19 endpoint(s) beneath base path '/actuator'
+2020-11-27 20:30:53.271 [main] INFO  s.d.s.w.PropertySourcedRequestMappingHandlerMapping[69] - Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2020-11-27 20:30:53.277 [main] INFO  com.newpi.data.config.Swagger2Config[32] - applicationName:whitzard-manager
+2020-11-27 20:30:53.340 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 20:30:53.340 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 20:30:53.365 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-27 20:30:53.367 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-27 20:30:53.756 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-27 20:30:55.069 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 20:30:55.447 [main] INFO  org.apache.coyote.http11.Http11NioProtocol[173] - Starting ProtocolHandler ["http-nio-8010"]
+2020-11-27 20:30:55.506 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer[220] - Tomcat started on port(s): 8010 (http) with context path ''
+2020-11-27 20:30:55.512 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"10.60.104.58","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8010,"scheduled":false,"serviceName":"dev@@whitzard-manager","stopped":false,"weight":1.0} to beat map.
+2020-11-27 20:30:55.690 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8010,"weight":1.0}
+2020-11-27 20:30:55.727 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-manager 10.60.104.58:8010 register finished
+2020-11-27 20:30:55.732 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[160] - Context refreshed
+2020-11-27 20:30:55.783 [main] INFO  s.d.s.web.plugins.DocumentationPluginsBootstrapper[163] - Found 1 custom documentation plugin(s)
+2020-11-27 20:30:55.874 [main] INFO  s.d.spring.web.scanners.ApiListingReferenceScanner[41] - Scanning for api listing references
+2020-11-27 20:30:56.047 [main] INFO  com.newpi.data.WhitzardManager[61] - Started WhitzardManager in 14.246 seconds (JVM running for 14.975)
+2020-11-27 20:30:56.115 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager-dev.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 20:30:56.117 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager-dev.yaml, group=dev, cnt=1
+2020-11-27 20:30:56.118 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager.yaml+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 20:30:56.118 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager.yaml, group=dev, cnt=1
+2020-11-27 20:30:56.119 [main] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[197] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [subscribe] whitzard-manager+dev+76ee77bd-b7d7-4a9d-94d2-fab208c237be
+2020-11-27 20:30:56.120 [main] INFO  com.alibaba.nacos.client.config.impl.CacheData[92] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [add-listener] ok, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, dataId=whitzard-manager, group=dev, cnt=1
+2020-11-27 20:30:56.132 [com.alibaba.nacos.client.Worker.longPolling.fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] INFO  com.alibaba.nacos.client.config.impl.ClientWorker[522] - get changedGroupKeys:[]
+2020-11-27 20:30:59.717 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[218] - Shutting down ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-27 20:30:59.720 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[80] - De-registering from Nacos Server now...
+2020-11-27 20:30:59.721 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[79] - [BEAT] removing beat: dev@@whitzard-manager:10.60.104.58:8010 from beat map.
+2020-11-27 20:30:59.722 [SpringContextShutdownHook] INFO  com.alibaba.nacos.client.naming[218] - [DEREGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be deregistering service dev@@whitzard-manager with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"instanceIdGenerator":"simple","ip":"10.60.104.58","ipDeleteTimeout":30000,"metadata":{},"port":8010,"weight":1.0}
+2020-11-27 20:30:59.741 [SpringContextShutdownHook] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[100] - De-registration finished.
+2020-11-27 20:30:59.743 [SpringContextShutdownHook] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'

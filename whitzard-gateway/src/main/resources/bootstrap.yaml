@@ -1,0 +1,67 @@
+server:
+  port: 8001
+  namespace:
+    name: whitzard
+    id: 76ee77bd-b7d7-4a9d-94d2-fab208c237be
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: whitzard-gateway
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+  datasource:
+    name: whitzard-ds
+    url: jdbc:mysql://10.103.18.42:32306/whitzard?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      whiteList:
+        - "/doc.html"
+        - "/swagger-resources/**"
+        - "/swagger/**"
+        - "/**/v2/api-docs"
+        - "/webjars/springfox-swagger-ui/**"
+        - "/actuator/**"
+        - "/**/oauth/token"
+      blackList:
+      - "/**/v2/api-docs"
+
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+      config:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+        file-extension: yaml
+        refresh-enabled: true #开启动态刷新
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8002/rsa/publicKey
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+swagger:
+  enabled: false
+  title:
+  base-package: com.newpi.data.controller

@@ -1,0 +1,1273 @@
+2020-11-25 22:54:51.267 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[21] - HV000001: Hibernate Validator 6.1.6.Final
+2020-11-25 22:54:52.916 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-25 22:54:52.970 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-25 22:54:53.098 [main] ERROR c.alibaba.nacos.client.config.http.ServerHttpAgent[106] - [NACOS IOException httpGet] currentServerAddr: http://nacos.k8sml.test.yidian-inc.com
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:142)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.099 [main] ERROR com.alibaba.nacos.client.config.impl.ClientWorker[235] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [sub-server] get server config exception, dataId=whitzard-gateway, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:142)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.100 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[154] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get from server error, dataId=whitzard-gateway, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, msg=ErrCode:500, ErrMsg:nacos.k8sml.test.yidian-inc.com
+2020-11-25 22:54:53.101 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[158] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get snapshot ok, dataId=whitzard-gateway, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, config=
+2020-11-25 22:54:53.103 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway] & group[dev]
+2020-11-25 22:54:53.108 [main] ERROR c.alibaba.nacos.client.config.http.ServerHttpAgent[106] - [NACOS IOException httpGet] currentServerAddr: http://nacos.k8sml.test.yidian-inc.com
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:145)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.109 [main] ERROR com.alibaba.nacos.client.config.impl.ClientWorker[235] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [sub-server] get server config exception, dataId=whitzard-gateway.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:145)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.110 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[154] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get from server error, dataId=whitzard-gateway.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, msg=ErrCode:500, ErrMsg:nacos.k8sml.test.yidian-inc.com
+2020-11-25 22:54:53.111 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[158] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get snapshot ok, dataId=whitzard-gateway.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, config=
+2020-11-25 22:54:53.111 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway.yaml] & group[dev]
+2020-11-25 22:54:53.113 [main] ERROR c.alibaba.nacos.client.config.http.ServerHttpAgent[106] - [NACOS IOException httpGet] currentServerAddr: http://nacos.k8sml.test.yidian-inc.com
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:150)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.119 [main] ERROR com.alibaba.nacos.client.config.impl.ClientWorker[235] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [sub-server] get server config exception, dataId=whitzard-gateway-dev.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be
+java.net.UnknownHostException: nacos.k8sml.test.yidian-inc.com
+	at java.net.AbstractPlainSocketImpl.connect(AbstractPlainSocketImpl.java:184)
+	at java.net.SocksSocketImpl.connect(SocksSocketImpl.java:392)
+	at java.net.Socket.connect(Socket.java:589)
+	at sun.net.NetworkClient.doConnect(NetworkClient.java:175)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:463)
+	at sun.net.www.http.HttpClient.openServer(HttpClient.java:558)
+	at sun.net.www.http.HttpClient.<init>(HttpClient.java:242)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:339)
+	at sun.net.www.http.HttpClient.New(HttpClient.java:357)
+	at sun.net.www.protocol.http.HttpURLConnection.getNewHttpClient(HttpURLConnection.java:1220)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(HttpURLConnection.java:1156)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(HttpURLConnection.java:1050)
+	at sun.net.www.protocol.http.HttpURLConnection.connect(HttpURLConnection.java:984)
+	at com.alibaba.nacos.client.config.impl.HttpSimpleClient.httpGet(HttpSimpleClient.java:61)
+	at com.alibaba.nacos.client.config.http.ServerHttpAgent.httpGet(ServerHttpAgent.java:88)
+	at com.alibaba.nacos.client.config.http.MetricsHttpAgent.httpGet(MetricsHttpAgent.java:48)
+	at com.alibaba.nacos.client.config.impl.ClientWorker.getServerConfig(ClientWorker.java:230)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfigInner(NacosConfigService.java:143)
+	at com.alibaba.nacos.client.config.NacosConfigService.getConfig(NacosConfigService.java:92)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.loadNacosData(NacosPropertySourceBuilder.java:85)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceBuilder.build(NacosPropertySourceBuilder.java:74)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosPropertySource(NacosPropertySourceLocator.java:204)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadNacosDataIfPresent(NacosPropertySourceLocator.java:191)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.loadApplicationConfiguration(NacosPropertySourceLocator.java:150)
+	at com.alibaba.cloud.nacos.client.NacosPropertySourceLocator.locate(NacosPropertySourceLocator.java:103)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:52)
+	at org.springframework.cloud.bootstrap.config.PropertySourceLocator.locateCollection(PropertySourceLocator.java:47)
+	at org.springframework.cloud.bootstrap.config.PropertySourceBootstrapConfiguration.initialize(PropertySourceBootstrapConfiguration.java:98)
+	at org.springframework.boot.SpringApplication.applyInitializers(SpringApplication.java:626)
+	at org.springframework.boot.SpringApplication.prepareContext(SpringApplication.java:370)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:314)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+2020-11-25 22:54:53.120 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[154] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get from server error, dataId=whitzard-gateway-dev.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, msg=ErrCode:500, ErrMsg:nacos.k8sml.test.yidian-inc.com
+2020-11-25 22:54:53.127 [main] WARN  com.alibaba.nacos.client.config.NacosConfigService[158] - [fixed-nacos.k8sml.test.yidian-inc.com-76ee77bd-b7d7-4a9d-94d2-fab208c237be] [get-config] get snapshot ok, dataId=whitzard-gateway-dev.yaml, group=dev, tenant=76ee77bd-b7d7-4a9d-94d2-fab208c237be, config=
+2020-11-25 22:54:53.149 [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil[47] - isMultiInstance:false
+2020-11-25 22:54:53.216 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway,dev'}]
+2020-11-25 22:54:53.233 [main] INFO  com.newpi.data.WhitzardGateway[655] - The following profiles are active: dev
+2020-11-25 22:54:53.474 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.newpi.data.WhitzardGateway]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+2020-11-25 22:54:53.510 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.newpi.data.WhitzardGateway]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 14 common frames omitted
+2020-11-25 22:56:26.384 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[21] - HV000001: Hibernate Validator 6.1.6.Final
+2020-11-25 22:56:27.989 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-25 22:56:28.134 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-25 22:56:29.288 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway] & group[dev]
+2020-11-25 22:56:29.345 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway.yaml] & group[dev]
+2020-11-25 22:56:29.397 [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil[47] - isMultiInstance:false
+2020-11-25 22:56:29.422 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway,dev'}]
+2020-11-25 22:56:29.430 [main] INFO  com.newpi.data.WhitzardGateway[655] - The following profiles are active: dev
+2020-11-25 22:56:29.552 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.newpi.data.WhitzardGateway]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+2020-11-25 22:56:29.587 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.newpi.data.WhitzardGateway]; nested exception is org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:189)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:319)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:236)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:280)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:96)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:707)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:533)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: org.springframework.context.annotation.ConflictingBeanDefinitionException: Annotation-specified bean name 'gatewayServiceHandler' for bean class [com.newpi.data.service.impl.GatewayServiceHandler] conflicts with existing, non-compatible bean definition of same name and class [com.newpi.data.service.GatewayServiceHandler]
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.checkCandidate(ClassPathBeanDefinitionScanner.java:349)
+	at org.springframework.context.annotation.ClassPathBeanDefinitionScanner.doScan(ClassPathBeanDefinitionScanner.java:287)
+	at org.springframework.context.annotation.ComponentScanAnnotationParser.parse(ComponentScanAnnotationParser.java:132)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:296)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:250)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:207)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:175)
+	... 14 common frames omitted
+2020-11-25 22:59:27.590 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[21] - HV000001: Hibernate Validator 6.1.6.Final
+2020-11-25 22:59:29.179 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-25 22:59:29.316 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-25 22:59:29.479 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway] & group[dev]
+2020-11-25 22:59:29.499 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway.yaml] & group[dev]
+2020-11-25 22:59:29.554 [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil[47] - isMultiInstance:false
+2020-11-25 22:59:29.596 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway,dev'}]
+2020-11-25 22:59:29.609 [main] INFO  com.newpi.data.WhitzardGateway[655] - The following profiles are active: dev
+2020-11-25 22:59:31.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 22:59:31.041 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-25 22:59:31.225 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 169ms. Found 2 JPA repository interfaces.
+2020-11-25 22:59:31.252 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 22:59:31.257 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 22:59:31.304 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.GatewayRouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 22:59:31.305 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.RouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 22:59:31.306 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 18ms. Found 0 Redis repository interfaces.
+2020-11-25 22:59:31.514 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-25 22:59:31.763 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=7004e4a2-3565-3098-9f77-849bda1769e5
+2020-11-25 22:59:31.946 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 22:59:31.949 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 22:59:31.955 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 22:59:32.431 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 22:59:32.446 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - whitzard-ds - Starting...
+2020-11-25 22:59:33.346 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - whitzard-ds - Start completed.
+2020-11-25 22:59:33.414 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper[31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-25 22:59:33.425 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gatewayRouteController': Unsatisfied dependency expressed through field 'gatewayRouteHandler'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'gatewayRouteHandler': Unsatisfied dependency expressed through field 'redisTemplate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'org.springframework.data.redis.core.RedisTemplate<java.lang.String, java.lang.Object>' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2020-11-25 22:59:33.425 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 22:59:33.507 [task-1] INFO  org.hibernate.Version[44] - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-25 22:59:33.922 [task-1] INFO  org.hibernate.annotations.common.Version[49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-25 22:59:34.233 [task-1] INFO  org.hibernate.dialect.Dialect[170] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-25 22:59:35.787 [task-1] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator[52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-25 22:59:35.803 [task-1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 22:59:35.807 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 22:59:35.808 [main] INFO  com.zaxxer.hikari.HikariDataSource[350] - whitzard-ds - Shutdown initiated...
+2020-11-25 22:59:35.822 [main] INFO  com.zaxxer.hikari.HikariDataSource[352] - whitzard-ds - Shutdown completed.
+2020-11-25 22:59:35.830 [task-2] WARN  com.zaxxer.hikari.pool.PoolBase[184] - whitzard-ds - Failed to validate connection com.mysql.cj.jdbc.ConnectionImpl@6a4746 (No operations allowed after connection closed.). Possibly consider using a shorter maxLifetime value.
+2020-11-25 22:59:35.871 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 22:59:36.226 [main] ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter[40] - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisTemplate in com.newpi.data.service.GatewayRouteHandler required a bean of type 'org.springframework.data.redis.core.RedisTemplate' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.data.redis.core.RedisTemplate' in your configuration.
+
+2020-11-25 23:00:59.517 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[21] - HV000001: Hibernate Validator 6.1.6.Final
+2020-11-25 23:01:01.087 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-25 23:01:01.154 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-25 23:01:01.230 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway] & group[dev]
+2020-11-25 23:01:01.265 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway.yaml] & group[dev]
+2020-11-25 23:01:01.292 [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil[47] - isMultiInstance:false
+2020-11-25 23:01:01.345 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway,dev'}]
+2020-11-25 23:01:01.352 [main] INFO  com.newpi.data.WhitzardGateway[655] - The following profiles are active: dev
+2020-11-25 23:01:02.769 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 23:01:02.770 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-25 23:01:02.914 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 128ms. Found 2 JPA repository interfaces.
+2020-11-25 23:01:02.931 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 23:01:02.933 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 23:01:02.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.GatewayRouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 23:01:02.954 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.RouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 23:01:02.955 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 8ms. Found 0 Redis repository interfaces.
+2020-11-25 23:01:03.107 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:01:03.272 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=d6df1d0f-7dc0-3b83-861b-a14d3b0d4d88
+2020-11-25 23:01:03.469 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:01:03.472 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:01:03.474 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:01:03.918 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 23:01:03.930 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - whitzard-ds - Starting...
+2020-11-25 23:01:04.699 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - whitzard-ds - Start completed.
+2020-11-25 23:01:04.765 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper[31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-25 23:01:04.876 [task-1] INFO  org.hibernate.Version[44] - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-25 23:01:05.332 [task-1] INFO  org.hibernate.annotations.common.Version[49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-25 23:01:05.434 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-25 23:01:05.434 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 23:01:05.441 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-25 23:01:05.442 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 23:01:05.644 [task-1] INFO  org.hibernate.dialect.Dialect[170] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-25 23:01:06.954 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [After]
+2020-11-25 23:01:06.956 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Before]
+2020-11-25 23:01:06.957 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Between]
+2020-11-25 23:01:06.958 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Cookie]
+2020-11-25 23:01:06.958 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Header]
+2020-11-25 23:01:06.959 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Host]
+2020-11-25 23:01:06.959 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Method]
+2020-11-25 23:01:06.960 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Path]
+2020-11-25 23:01:06.960 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Query]
+2020-11-25 23:01:06.960 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-11-25 23:01:06.961 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [RemoteAddr]
+2020-11-25 23:01:06.962 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Weight]
+2020-11-25 23:01:06.962 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-11-25 23:01:07.499 [task-1] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator[52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-25 23:01:07.525 [task-1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 23:01:07.528 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:01:07.528 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:01:07.580 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-25 23:01:07.581 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-25 23:01:07.582 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-25 23:01:07.800 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 20 endpoint(s) beneath base path '/actuator'
+2020-11-25 23:01:07.938 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-25 23:01:08.438 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer[109] - Netty started on port(s): 8001
+2020-11-25 23:01:08.449 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8001,"scheduled":false,"serviceName":"dev@@whitzard-gateway","stopped":false,"weight":1.0} to beat map.
+2020-11-25 23:01:08.625 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-gateway with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8001,"weight":1.0}
+2020-11-25 23:01:08.665 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-gateway 192.168.1.141:8001 register finished
+2020-11-25 23:01:08.697 [Nacso-Watch-Task-Scheduler-1] ERROR o.s.cloud.gateway.route.CachingRouteLocator[96] - Refresh routes error !!!
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4324)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4184)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4120)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4067)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:82)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.resetIfNeeded(RouteRefreshListener.java:63)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:57)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.nacosServicesWatch(NacosWatch.java:130)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:308)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2020-11-25 23:01:08.699 [main] ERROR o.s.cloud.gateway.route.CachingRouteLocator[96] - Refresh routes error !!!
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4324)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4184)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4120)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4067)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:82)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:142)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:56)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-25 23:01:08.723 [Nacso-Watch-Task-Scheduler-1] ERROR o.s.s.support.TaskUtils$LoggingErrorHandler[95] - Unexpected error occurred in scheduled task
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.Flux.subscribeWith(Flux.java:8494)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8295)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8222)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8140)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$0(WeightCalculatorWebFilter.java:146)
+	at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.java:93)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:146)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.resetIfNeeded(RouteRefreshListener.java:63)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:57)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.nacosServicesWatch(NacosWatch.java:130)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:308)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2020-11-25 23:01:08.733 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+2020-11-25 23:01:08.910 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 23:01:08.930 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 23:01:08.934 [main] INFO  com.zaxxer.hikari.HikariDataSource[350] - whitzard-ds - Shutdown initiated...
+2020-11-25 23:01:08.980 [main] INFO  com.zaxxer.hikari.HikariDataSource[352] - whitzard-ds - Shutdown completed.
+2020-11-25 23:01:11.086 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 23:01:11.099 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.Flux.subscribeWith(Flux.java:8494)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8295)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8222)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8140)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$0(WeightCalculatorWebFilter.java:146)
+	at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.java:93)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:146)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:142)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:56)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-25 23:12:17.779 [background-preinit] INFO  org.hibernate.validator.internal.util.Version[21] - HV000001: Hibernate Validator 6.1.6.Final
+2020-11-25 23:12:18.759 [main] INFO  c.a.n.client.config.impl.LocalConfigInfoProcessor[195] - LOCAL_SNAPSHOT_PATH:/Users/admin/nacos/config
+2020-11-25 23:12:18.799 [main] INFO  com.alibaba.nacos.client.config.impl.Limiter[53] - limitTime:5.0
+2020-11-25 23:12:18.882 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway] & group[dev]
+2020-11-25 23:12:18.924 [main] WARN  c.a.cloud.nacos.client.NacosPropertySourceBuilder[87] - Ignore the empty nacos configuration and get it based on dataId[whitzard-gateway.yaml] & group[dev]
+2020-11-25 23:12:18.975 [main] INFO  com.alibaba.nacos.client.config.utils.JVMUtil[47] - isMultiInstance:false
+2020-11-25 23:12:18.992 [main] INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration[112] - Located property source: [BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway-dev.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway.yaml,dev'}, BootstrapPropertySource {name='bootstrapProperties-whitzard-gateway,dev'}]
+2020-11-25 23:12:19.003 [main] INFO  com.newpi.data.WhitzardGateway[655] - The following profiles are active: dev
+2020-11-25 23:12:20.394 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 23:12:20.395 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-11-25 23:12:20.660 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 240ms. Found 2 JPA repository interfaces.
+2020-11-25 23:12:20.690 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2020-11-25 23:12:20.717 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2020-11-25 23:12:20.761 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.GatewayRouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 23:12:20.762 [main] INFO  o.s.d.r.c.RepositoryConfigurationExtensionSupport[348] - Spring Data Redis - Could not safely identify store assignment for repository candidate interface com.newpi.data.dao.RouteDao. If you want this repository to be a Redis repository, consider annotating your entities with one of these annotations: org.springframework.data.redis.core.RedisHash (preferred), or consider extending one of the following types with your repository: org.springframework.data.keyvalue.repository.KeyValueRepository.
+2020-11-25 23:12:20.763 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate[187] - Finished Spring Data repository scanning in 21ms. Found 0 Redis repository interfaces.
+2020-11-25 23:12:20.917 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'service-registry' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:12:21.082 [main] INFO  o.springframework.cloud.context.scope.GenericScope[295] - BeanFactory id=d6df1d0f-7dc0-3b83-861b-a14d3b0d4d88
+2020-11-25 23:12:21.251 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:12:21.253 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig' of type [org.springframework.cloud.client.loadbalancer.reactive.LoadBalancerBeanPostProcessorAutoConfiguration$ReactiveLoadBalancerConfig] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:12:21.255 [main] INFO  o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker[335] - Bean 'deferringLoadBalancerExchangeFilterFunction' of type [org.springframework.cloud.client.loadbalancer.reactive.DeferringLoadBalancerExchangeFilterFunction] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-11-25 23:12:21.757 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[181] - Initializing ExecutorService 'applicationTaskExecutor'
+2020-11-25 23:12:21.768 [main] INFO  com.zaxxer.hikari.HikariDataSource[110] - whitzard-ds - Starting...
+2020-11-25 23:12:22.526 [main] INFO  com.zaxxer.hikari.HikariDataSource[123] - whitzard-ds - Start completed.
+2020-11-25 23:12:22.580 [task-1] INFO  org.hibernate.jpa.internal.util.LogHelper[31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-11-25 23:12:22.664 [task-1] INFO  org.hibernate.Version[44] - HHH000412: Hibernate ORM core version 5.4.22.Final
+2020-11-25 23:12:22.932 [task-1] INFO  org.hibernate.annotations.common.Version[49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-11-25 23:12:23.152 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-25 23:12:23.153 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 23:12:23.163 [main] WARN  com.netflix.config.sources.URLConfigurationSource[121] - No URLs will be polled as dynamic configuration sources.
+2020-11-25 23:12:23.164 [main] INFO  com.netflix.config.sources.URLConfigurationSource[122] - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-11-25 23:12:23.455 [task-1] INFO  org.hibernate.dialect.Dialect[170] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2020-11-25 23:12:24.596 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [After]
+2020-11-25 23:12:24.597 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Before]
+2020-11-25 23:12:24.597 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Between]
+2020-11-25 23:12:24.597 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Cookie]
+2020-11-25 23:12:24.598 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Header]
+2020-11-25 23:12:24.598 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Host]
+2020-11-25 23:12:24.599 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Method]
+2020-11-25 23:12:24.600 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Path]
+2020-11-25 23:12:24.600 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Query]
+2020-11-25 23:12:24.600 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [ReadBodyPredicateFactory]
+2020-11-25 23:12:24.601 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [RemoteAddr]
+2020-11-25 23:12:24.601 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [Weight]
+2020-11-25 23:12:24.601 [main] INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator[139] - Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2020-11-25 23:12:25.087 [task-1] INFO  o.h.e.t.jta.platform.internal.JtaPlatformInitiator[52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-11-25 23:12:25.103 [task-1] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 23:12:25.118 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-config' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:12:25.118 [main] WARN  o.springframework.boot.actuate.endpoint.EndpointId[155] - Endpoint ID 'nacos-discovery' contains invalid characters, please migrate to a valid format.
+2020-11-25 23:12:25.163 [main] INFO  com.alibaba.nacos.client.naming[56] - initializer namespace from System Property :null
+2020-11-25 23:12:25.165 [main] INFO  com.alibaba.nacos.client.naming[65] - initializer namespace from System Environment :null
+2020-11-25 23:12:25.165 [main] INFO  com.alibaba.nacos.client.naming[75] - initializer namespace from System Property :null
+2020-11-25 23:12:25.320 [main] INFO  o.s.b.actuate.endpoint.web.EndpointLinksResolver[58] - Exposing 20 endpoint(s) beneath base path '/actuator'
+2020-11-25 23:12:25.445 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskScheduler[181] - Initializing ExecutorService 'Nacso-Watch-Task-Scheduler'
+2020-11-25 23:12:29.252 [main] INFO  o.s.boot.web.embedded.netty.NettyWebServer[109] - Netty started on port(s): 8001
+2020-11-25 23:12:29.267 [main] INFO  com.alibaba.nacos.client.naming[66] - [BEAT] adding beat: {"cluster":"DEFAULT","ip":"192.168.1.141","metadata":{"preserved.register.source":"SPRING_CLOUD"},"period":5000,"port":8001,"scheduled":false,"serviceName":"dev@@whitzard-gateway","stopped":false,"weight":1.0} to beat map.
+2020-11-25 23:12:29.414 [main] INFO  com.alibaba.nacos.client.naming[196] - [REGISTER-SERVICE] 76ee77bd-b7d7-4a9d-94d2-fab208c237be registering service dev@@whitzard-gateway with instance: {"clusterName":"DEFAULT","enabled":true,"ephemeral":true,"healthy":true,"instanceHeartBeatInterval":5000,"instanceHeartBeatTimeOut":15000,"ip":"192.168.1.141","ipDeleteTimeout":30000,"metadata":{"preserved.register.source":"SPRING_CLOUD"},"port":8001,"weight":1.0}
+2020-11-25 23:12:29.450 [main] INFO  c.a.cloud.nacos.registry.NacosServiceRegistry[65] - nacos registry, dev whitzard-gateway 192.168.1.141:8001 register finished
+2020-11-25 23:12:33.876 [main] ERROR o.s.cloud.gateway.route.CachingRouteLocator[96] - Refresh routes error !!!
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4324)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4184)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4120)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4067)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:82)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:142)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:56)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)
+2020-11-25 23:12:33.876 [Nacso-Watch-Task-Scheduler-1] ERROR o.s.cloud.gateway.route.CachingRouteLocator[96] - Refresh routes error !!!
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4213)
+	at reactor.core.publisher.Mono.subscribeWith(Mono.java:4324)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4184)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4120)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4067)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:82)
+	at org.springframework.cloud.gateway.route.CachingRouteLocator.onApplicationEvent(CachingRouteLocator.java:40)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.resetIfNeeded(RouteRefreshListener.java:63)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:57)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.nacosServicesWatch(NacosWatch.java:130)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:308)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2020-11-25 23:12:33.910 [Nacso-Watch-Task-Scheduler-1] ERROR o.s.s.support.TaskUtils$LoggingErrorHandler[95] - Unexpected error occurred in scheduled task
+reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.Flux.subscribeWith(Flux.java:8494)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8295)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8222)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8140)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$0(WeightCalculatorWebFilter.java:146)
+	at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.java:93)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:146)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.resetIfNeeded(RouteRefreshListener.java:63)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:57)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at com.alibaba.cloud.nacos.discovery.NacosWatch.nacosServicesWatch(NacosWatch.java:130)
+	at org.springframework.scheduling.support.DelegatingErrorHandlingRunnable.run(DelegatingErrorHandlingRunnable.java:54)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.runAndReset$$$capture(FutureTask.java:308)
+	at java.util.concurrent.FutureTask.runAndReset(FutureTask.java)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.access$301(ScheduledThreadPoolExecutor.java:180)
+	at java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:294)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	... 1 common frames omitted
+2020-11-25 23:12:33.938 [main] WARN  o.s.b.w.r.c.AnnotationConfigReactiveWebServerApplicationContext[559] - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+2020-11-25 23:12:34.073 [main] INFO  o.s.orm.jpa.LocalContainerEntityManagerFactoryBean[598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-11-25 23:12:34.075 [main] INFO  o.s.scheduling.concurrent.ThreadPoolTaskExecutor[218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-11-25 23:12:34.076 [main] INFO  com.zaxxer.hikari.HikariDataSource[350] - whitzard-ds - Shutdown initiated...
+2020-11-25 23:12:34.128 [main] INFO  com.zaxxer.hikari.HikariDataSource[352] - whitzard-ds - Shutdown completed.
+2020-11-25 23:12:36.255 [main] INFO  o.s.b.a.l.ConditionEvaluationReportLoggingListener[136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2020-11-25 23:12:36.265 [main] ERROR org.springframework.boot.SpringApplication[837] - Application run failed
+org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:185)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: reactor.core.Exceptions$ErrorCallbackNotImplemented: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+Caused by: org.springframework.data.redis.RedisSystemException: Error in execution; nested exception is io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:54)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:52)
+	at org.springframework.data.redis.connection.lettuce.LettuceExceptionConverter.convert(LettuceExceptionConverter.java:41)
+	at org.springframework.data.redis.PassThroughExceptionTranslationStrategy.translate(PassThroughExceptionTranslationStrategy.java:44)
+	at org.springframework.data.redis.FallbackExceptionTranslationStrategy.translate(FallbackExceptionTranslationStrategy.java:42)
+	at org.springframework.data.redis.connection.lettuce.LettuceConnection.convertLettuceAccessException(LettuceConnection.java:273)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.convertLettuceAccessException(LettuceHashCommands.java:471)
+	at org.springframework.data.redis.connection.lettuce.LettuceHashCommands.hVals(LettuceHashCommands.java:371)
+	at org.springframework.data.redis.connection.DefaultedRedisConnection.hVals(DefaultedRedisConnection.java:1164)
+	at org.springframework.data.redis.core.DefaultHashOperations.lambda$values$11(DefaultHashOperations.java:219)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:228)
+	at org.springframework.data.redis.core.RedisTemplate.execute(RedisTemplate.java:188)
+	at org.springframework.data.redis.core.AbstractOperations.execute(AbstractOperations.java:96)
+	at org.springframework.data.redis.core.DefaultHashOperations.values(DefaultHashOperations.java:219)
+	at com.newpi.data.service.RedisRouteDefinitionRepository.getRouteDefinitions(RedisRouteDefinitionRepository.java:33)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:201)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onNext(FluxMergeSequential.java:230)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.slowPath(FluxIterable.java:267)
+	at reactor.core.publisher.FluxIterable$IterableSubscription.request(FluxIterable.java:225)
+	at reactor.core.publisher.FluxMergeSequential$MergeSequentialMain.onSubscribe(FluxMergeSequential.java:191)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:161)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:86)
+	at reactor.core.publisher.InternalFluxOperator.subscribe(InternalFluxOperator.java:62)
+	at reactor.core.publisher.FluxDefer.subscribe(FluxDefer.java:54)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8325)
+	at reactor.core.publisher.Flux.subscribeWith(Flux.java:8494)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8295)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8222)
+	at reactor.core.publisher.Flux.subscribe(Flux.java:8140)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.lambda$onApplicationEvent$0(WeightCalculatorWebFilter.java:146)
+	at org.springframework.beans.factory.ObjectProvider.ifAvailable(ObjectProvider.java:93)
+	at org.springframework.cloud.gateway.filter.WeightCalculatorWebFilter.onApplicationEvent(WeightCalculatorWebFilter.java:146)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.reset(RouteRefreshListener.java:68)
+	at org.springframework.cloud.gateway.route.RouteRefreshListener.onApplicationEvent(RouteRefreshListener.java:49)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.start(AbstractAutoServiceRegistration.java:142)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.bind(AbstractAutoServiceRegistration.java:101)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:88)
+	at org.springframework.cloud.client.serviceregistry.AbstractAutoServiceRegistration.onApplicationEvent(AbstractAutoServiceRegistration.java:47)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165)
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404)
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361)
+	at org.springframework.boot.web.reactive.context.WebServerManager.start(WebServerManager.java:56)
+	at org.springframework.boot.web.reactive.context.WebServerStartStopLifecycle.start(WebServerStartStopLifecycle.java:40)
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStart(DefaultLifecycleProcessor.java:182)
+	at org.springframework.context.support.DefaultLifecycleProcessor.access$200(DefaultLifecycleProcessor.java:53)
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.start(DefaultLifecycleProcessor.java:360)
+	at org.springframework.context.support.DefaultLifecycleProcessor.startBeans(DefaultLifecycleProcessor.java:158)
+	at org.springframework.context.support.DefaultLifecycleProcessor.onRefresh(DefaultLifecycleProcessor.java:122)
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:895)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554)
+	at org.springframework.boot.web.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:62)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.newpi.data.WhitzardGateway.main(WhitzardGateway.java:18)
+Caused by: io.lettuce.core.RedisCommandExecutionException: CLUSTERDOWN Hash slot not served
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:135)
+	at io.lettuce.core.ExceptionFactory.createExecutionException(ExceptionFactory.java:108)
+	at io.lettuce.core.protocol.AsyncCommand.completeResult(AsyncCommand.java:118)
+	at io.lettuce.core.protocol.AsyncCommand.complete(AsyncCommand.java:109)
+	at io.lettuce.core.protocol.CommandWrapper.complete(CommandWrapper.java:59)
+	at io.lettuce.core.protocol.CommandHandler.complete(CommandHandler.java:680)
+	at io.lettuce.core.protocol.CommandHandler.decode(CommandHandler.java:640)
+	at io.lettuce.core.protocol.CommandHandler.channelRead(CommandHandler.java:591)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.lang.Thread.run(Thread.java:748)

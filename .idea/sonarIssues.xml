@@ -1,0 +1,1139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="issues">
+    <option name="index">
+      <map>
+        <entry key="/Dummy.txt">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-cluster/src/main/java/com/yidian/data/cluster/controller/ClusterResourceManagerController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-cluster/src/main/java/com/yidian/data/cluster/service/ClusterResourceManagerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-cluster/src/main/java/com/yidian/data/cluster/service/impl/AppQuotaServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-cluster/src/main/java/com/yidian/data/cluster/service/impl/ClusterResourceManagerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-commons/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-commons/src/main/java/com/yidian/data/commons/utils/K8sCacheUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-commons/src/main/java/com/yidian/data/commons/utils/K8sUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/config/SchedulerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/controller/BucketController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/controller/PredictServerController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/dao/PlatformReportStatsDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/enums/OptType.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/platform/ExperimentSimpleDesc.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/platform/ExperimentStatistics.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/platform/PlatformMachineStatistics.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/predictserver/PredictServerParamInterceptor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/predictserver/PredictServerPendingInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/AbstractQueuedAppService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/PredictServerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/ReportFormService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/AppK8sServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/BucketServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/K8sServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/PredictServerImageServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/PredictServerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/ReportFormServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/SystemServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/utils/Constants.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/test/java/com/yidian/data/exptmgr/service/ReportFormServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-exptmgr/src/test/java/com/yidian/data/exptmgr/service/SystemsServiceTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-interfaces/src/main/java/com/yidian/data/interfaces/client/AlphaDumpClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/alpha/alpha-interfaces/src/main/java/com/yidian/data/interfaces/client/ClusterClient.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/temp/alpha/alpha-exptmgr/src/main/resources/application-prod.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$USER_HOME$/Desktop/whitzard/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-cluster/src/main/java/com/yidian/data/cluster/service/impl/K8sResourceDumpServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/src/main/java/com/yidian/data/commons/enums/ErrorCode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/src/main/java/com/yidian/data/commons/utils/K8sCacheUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/src/main/java/com/yidian/data/commons/utils/K8sUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/src/main/java/com/yidian/data/commons/utils/RedisUtils.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-commons/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/Application.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/config/SchedulerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/controller/BucketController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/bucket/BucketTrafficInfo.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/model/predictserver/PredictServerPublishWindowInterceptor.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/AbstractQueuedAppService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/PredictServerService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/AppK8sServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/JenkinsJobGeneratorServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/K8sServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/MPIJobServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/PredictServerImageServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/PredictServerServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/java/com/yidian/data/exptmgr/service/impl/SystemServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/resources/application-prod.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../alpha/alpha-exptmgr/src/main/resources/application.properties">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../camel/camel-manager/camel-service/camel-eureka/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../spring-security-oauth/README.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-knife4j/micro-knife4j-gateway/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-knife4j/micro-knife4j-order/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-knife4j/micro-knife4j-user/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-oauth2/micro-oauth2-api/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-oauth2/micro-oauth2-auth/src/main/java/com/macro/cloud/config/WebSecurityConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-oauth2/micro-oauth2-auth/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/../springcloud-learning/micro-oauth2/micro-oauth2-gateway/src/main/resources/application.yml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/docker/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-api/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/docker/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/docker/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/WhitzardAuth.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/component/JwtTokenEnhancer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/AuthorizationConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/JwtTokenEnhancer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/Oauth2ServerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/Swagger2Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/Test.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/WebSecurityConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/config/WebSecurityConfiguration.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/controller/AuthController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/controller/KeyPairController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/controller/PermissionController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/controller/RoleController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/controller/UserController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/dao/PermissionDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/dao/RoleDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/dao/RolePermissionDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/dao/UserDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/dao/UserRoleDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/Permission.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/Role.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/RolePermission.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/User.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/UserRole.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/entity/permission.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/enums/UserStatus.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/enums/UserStatusEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/Authority.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/Oauth2TokenDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/Oauth2TokenDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/PermissionDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/RoleDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/RolePermissionBindDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/UserDTO.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/UserDetail.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/model/UserDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/PermissionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/RolePermissionService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/RoleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/UserRoleService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/UserService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/UserServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/impl/PermissionServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/impl/RolePermissionServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/impl/RoleServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/impl/UserRoleServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/java/com/newpi/data/service/impl/UserServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/resources/bootstrap.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-auth/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/annotation/EnableSwagger2.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/config/RedisConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/config/Swagger2Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/config/SwaggerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/converter/JPAObjectJsonConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/converter/JpaListJsonConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/converter/JpaMapJsonConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/converter/JpaObjectJsonConverter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/enums/ResultCode.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/exception/ExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/exception/GlobalExceptionHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/exception/WhitzardException.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/log/WebLogAspect.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/model/Header.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/model/ResultEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/model/WebLog.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/service/RedisService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/java/com/newpi/data/service/impl/RedisServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/resources/META-INF/spring.factories">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-common/target/classes/META-INF/spring.factories">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-config/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/deploy/deploy.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/docker/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/docker/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/java/com/newpi/data/EurekaServer.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/resources/application-dev.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/resources/application-prod.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/resources/application-test.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-discovery/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/docker/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/docker/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/readme.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/GatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/RouteDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/WhitzardGateway.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/authorization/AuthorizationManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/config/GatewayBalckWhiteListConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/config/GatewaySwaggerProvider.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/config/ResourceServerConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/config/SwaggerResourceConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/config/WhiteUrlConfig.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/constant/RedisConstant.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/controller/GatewayController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/controller/GatewayRouteController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/controller/SwaggerCOntroller.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/controller/SwaggerController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/dao/GatewayRouteDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/dao/RouteDao.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/entity/GatewayRoute.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/entity/RouteEntity.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/filter/AuthGlobalFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/filter/IgnoreUrlsRemoveJwtFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/filter/WhiteListRemoveJwtFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/model/GatewayRouteDto.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/CustomeRouteDefinitionRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/GatewayRouteHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/GatewayRouteService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/GatewayServiceHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/MysqlRouteDefinitionRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/RedisRouteDefinitionRepository.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/RouteService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/RouteServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/AuthorizationManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/GatewayRouteServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/GatewayServiceHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/RestAuthenticationEntryPoint.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/RestfulAccessDeniedHandler.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/java/com/newpi/data/service/impl/RouteServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/application-dev.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/appliction.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/bootstrap.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-gateway/src/main/resources/whitzard-gateway-dev.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/build.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/docker/Dockerfile">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/docker/run.sh">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/readme.md">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/java/com/newpi/data/WhitzardManager.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/java/com/newpi/data/config/Swagger22Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/java/com/newpi/data/config/Swagger2Config.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/java/com/newpi/data/controller/HelloController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/resources/bootstrap.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-manager/src/main/resources/logback-spring.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-monitor/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whitzard-scheduler/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whizard-config/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whizard-gateway/pom.xml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whizard-gateway/src/main/java/com/newpi/data/GatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whizard-gateway/src/main/java/com/newpi/data/WhitzardGatewayApplication.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/whizard-gateway/src/main/resources/application.yaml">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/a.dummy">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="/fragment.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

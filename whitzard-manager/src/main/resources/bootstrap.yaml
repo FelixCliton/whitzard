@@ -1,0 +1,37 @@
+server:
+  port: 8010
+  namespace:
+    name: whitzard
+    id: 76ee77bd-b7d7-4a9d-94d2-fab208c237be
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: whitzard-manager
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true #开启动态路由识别功能，采用微服务名配置路由
+          lower-case-service-id: true
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+      config:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+        file-extension: yaml
+        refresh-enabled: true #开启动态刷新
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

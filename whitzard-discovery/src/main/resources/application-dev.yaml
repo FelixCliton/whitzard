@@ -1,0 +1,14 @@
+server:
+  port: 8001
+
+eureka:
+  instance:
+    hostname: localhost #服务主机名
+  client:
+    register-with-eureka: false # 是否把服务中心本身当做eureka client 注册。默认为true
+    fetch-registry: true # 是否拉取 eureka server 的注册信息。 默认为true
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/ # 指定服务中心 eureka server的地址
+  server:
+    enable-self-preservation: false
+    eviction-interval-timer-in-ms: 60000
