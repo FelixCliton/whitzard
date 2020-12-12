@@ -1,0 +1,46 @@
+server:
+  port: 8003
+  namespace:
+    name: whitzard
+    id: 76ee77bd-b7d7-4a9d-94d2-fab208c237be
+
+spring:
+  profiles:
+    active: dev
+  application:
+    name: whitzard-admin
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  datasource:
+    name: whitzard-ds
+    username: root
+    password: root
+    url: jdbc:mysql://10.103.18.42:32306/whitzard?useUnicode=true&characterEncoding=utf8
+    driver-class-name: com.mysql.jdbc.Driver
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+    nacos:
+      discovery:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+      config:
+        enabled: true
+        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        namespace: ${server.namespace.id}
+        group: ${spring.profiles.active}
+        file-extension: yaml
+        refresh-enabled: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"

@@ -16,7 +16,9 @@ public enum ResultCode {
     CLASS_CAST_ERROR(5004, "类型转换错误"),
 
     AUTH_ERROR(400, "权限错误"),
-    USER_NOT_FOUND(4001, "未找到相关用户信息"),
+    USER_EXIST(4001, "用户名已存在"),
+    USER_NAME_OR_PASSWORD_ERROR(4002, "用户名或密码错误"),
+    USER_NOT_FOUND(4003, "用户不存在"),
     ROLE_NOT_FOUND(4002, "未找到对应角色信息"),
     ROLE_CANNOT_DELETED(4003, "存在关联用户，角色信息删除失败"),
     PERMISSION_NOT_FOUND(4004, "为找到对应权限信息"),

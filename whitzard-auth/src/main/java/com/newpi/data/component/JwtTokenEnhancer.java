@@ -1,6 +1,6 @@
 package com.newpi.data.component;
 
-import com.newpi.data.model.UserDetail;
+import com.newpi.data.model.SecurityUser;
 import org.springframework.security.oauth2.common.DefaultOAuth2AccessToken;
 import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
@@ -18,10 +18,11 @@ import java.util.Map;
 public class JwtTokenEnhancer implements TokenEnhancer {
     @Override
     public OAuth2AccessToken enhance(OAuth2AccessToken accessToken, OAuth2Authentication authentication) {
-        UserDetail securityUser = (UserDetail) authentication.getPrincipal();
+        SecurityUser securityUser = (SecurityUser) authentication.getPrincipal();
         Map<String, Object> info = new HashMap<>();
         //把用户email设置到JWT中
         info.put("email", securityUser.getEmail());
+        info.put("client_id", securityUser.getClientId());
         ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(info);
         return accessToken;
     }

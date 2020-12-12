@@ -12,12 +12,11 @@
         <module>whitzard-common</module>
         <module>whitzard-gateway</module>
         <module>whitzard-auth</module>
-        <module>whitzard-api</module>
         <module>whitzard-monitor</module>
         <module>whitzard-scheduler</module>
-        <module>whitzard-discovery</module>
-        <module>whitzard-config</module>
         <module>whitzard-manager</module>
+        <module>whitzard-admin</module>
+        <module>whitzard-mbg</module>
     </modules>
 
     <parent>

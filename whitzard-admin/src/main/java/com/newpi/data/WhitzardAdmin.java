@@ -9,17 +9,18 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 /**
  * @author liujie3@yidian-inc.com
  * @version 1.0
- * @date: 2020/11/26 5:41 PM
+ * @date: 2020/12/12 4:37 PM
  * @desc:
  */
 @EnableSwagger2
 @EnableFeignClients
-@SpringBootApplication
 @EnableDiscoveryClient
-public class WhitzardAuth {
+@SpringBootApplication
+public class WhitzardAdmin {
 
     public static void main(String[] args) {
-        SpringApplication.run(WhitzardAuth.class);
+        SpringApplication.run(WhitzardAdmin.class, args);
     }
 
 }
+

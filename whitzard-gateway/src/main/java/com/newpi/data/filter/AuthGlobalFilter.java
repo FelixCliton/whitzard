@@ -25,6 +25,7 @@ import java.text.ParseException;
 public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
     private static final String EMAIL_HEADER = "email";
+    private static final String USER_NAME_HEADER = "username";
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
@@ -38,7 +39,11 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
             JWSObject jwsObject = JWSObject.parse(realToken);
             String userStr = jwsObject.getPayload().toString();
             String email = JSONObject.parseObject(userStr).getString(EMAIL_HEADER);
-            ServerHttpRequest request = exchange.getRequest().mutate().header(EMAIL_HEADER, email).build();
+            String username = JSONObject.parseObject(userStr).getString(EMAIL_HEADER);
+            ServerHttpRequest request = exchange.getRequest().mutate()
+                    .header(EMAIL_HEADER, email)
+                    .header(USER_NAME_HEADER, username)
+                    .build();
             exchange = exchange.mutate().request(request).build();
         } catch (ParseException e) {
             e.printStackTrace();
