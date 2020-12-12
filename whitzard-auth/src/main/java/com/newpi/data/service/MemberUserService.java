@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date: 2020/12/10 11:25 AM
  * @desc:
  */
-//@FeignClient("whitzard-admin")
+@FeignClient("whitzard-manager")
 public interface MemberUserService {
 
     /**
@@ -19,7 +19,7 @@ public interface MemberUserService {
      * @param userName
      * @return
      */
-//    @GetMapping("admin/loadByUsername")
+    @GetMapping("admin/loadByUsername")
     UserDTO loadUserByUsername(@RequestParam("username") String userName);
 
 
