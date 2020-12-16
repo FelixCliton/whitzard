@@ -2,6 +2,7 @@ package com.newpi.data.filter;
 
 import com.alibaba.fastjson.JSONObject;
 import com.google.common.base.Strings;
+import com.newpi.data.constant.AuthConstant;
 import com.nimbusds.jose.JWSObject;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
@@ -29,13 +30,13 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
 
     @Override
     public Mono<Void> filter(ServerWebExchange exchange, GatewayFilterChain chain) {
-        String token = exchange.getRequest().getHeaders().getFirst("Authorization");
+        String token = exchange.getRequest().getHeaders().getFirst(AuthConstant.JWT_TOKEN_HEADER);
         if (Strings.isNullOrEmpty(token)) {
             return chain.filter(exchange);
         }
         try {
             //从token中解析用户信息并设置到Header中去
-            String realToken = token.replace("Bearer ", "");
+            String realToken = token.replace(AuthConstant.JWT_TOKEN_PREFIX, "");
             JWSObject jwsObject = JWSObject.parse(realToken);
             String userStr = jwsObject.getPayload().toString();
             String email = JSONObject.parseObject(userStr).getString(EMAIL_HEADER);

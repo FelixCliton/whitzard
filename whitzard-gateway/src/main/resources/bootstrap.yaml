@@ -29,11 +29,18 @@ spring:
         - "/swagger-resources/**"
         - "/swagger/**"
         - "/**/v2/api-docs"
+        - "/**/*.js"
+        - "/**/*.css"
+        - "/**/*.png"
+        - "/**/*.ico"
         - "/webjars/springfox-swagger-ui/**"
         - "/actuator/**"
         - "/**/oauth/token"
+        - "/whitzard-auth/oauth/token"
+        - "/whitzard-auth/rsa/publicKey"
+        - "/whitzard-admin/user/login"
+        - "/whitzard-admin/user/register"
       blackList:
-      - "/**/v2/api-docs"
 
     nacos:
       discovery:
@@ -52,7 +59,7 @@ spring:
     oauth2:
       resourceserver:
         jwt:
-          jwk-set-uri: http://localhost:8002/rsa/publicKey
+          jwk-set-uri: http://10.103.18.42:32082/rsa/publicKey
 
 
 management:

@@ -97,5 +97,5 @@ check_cmd_result
 cur_time=`date`
 # 删除本地镜像
 echo "=============7.删除本地镜像============="
-sudo docker images -a | grep ${module_name} | awk '{print $3}'| sudo xargs docker rmi
+sudo docker images -a | grep ${module_name} | awk '{print $3}'| sudo xargs docker rmi --force
 check_cmd_result

@@ -25,6 +25,8 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import static com.newpi.data.constant.AuthConstant.EMAIL_HEADER;
+
 /**
  * @author liujie3@yidian-inc.com
  * @version 1.0
@@ -49,22 +51,26 @@ public class WebLogAspect {
         Object result = joinPoint.proceed();
         long endTime = System.currentTimeMillis();
 
-        WebLog webLog = new WebLog();
-        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
-        HttpServletRequest request = attributes.getRequest();
-        Signature signature = joinPoint.getSignature();
-        MethodSignature methodSignature = (MethodSignature) signature;
-        Method method = methodSignature.getMethod();
-        webLog.setUser(request.getHeader("email"));
-        webLog.setIp(request.getRemoteUser());
-        webLog.setRequestType(request.getMethod());
-        webLog.setMethod(method.getName());
-        webLog.setParameter(getParameter(method, joinPoint.getArgs()));
-        webLog.setResult(result);
-        webLog.setSpendTime(endTime - startTime);
-        webLog.setStartTime(startTime);
-        webLog.setUrl(request.getRequestURL().toString());
-        log.info(JSONObject.toJSONString(webLog));
+        try {
+            WebLog webLog = new WebLog();
+            ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+            HttpServletRequest request = attributes.getRequest();
+            Signature signature = joinPoint.getSignature();
+            MethodSignature methodSignature = (MethodSignature) signature;
+            Method method = methodSignature.getMethod();
+            webLog.setUser(request.getHeader(EMAIL_HEADER));
+            webLog.setIp(request.getRemoteUser());
+            webLog.setRequestType(request.getMethod());
+            webLog.setMethod(method.getName());
+            webLog.setParameter(getParameter(method, joinPoint.getArgs()));
+            webLog.setResult(result);
+            webLog.setSpendTime(endTime - startTime);
+            webLog.setStartTime(startTime);
+            webLog.setUrl(request.getRequestURL().toString());
+            log.info(JSONObject.toJSONString(webLog));
+        } catch (Exception e) {
+            log.error(e.getMessage(), e);
+        }
         return result;
     }
 
