@@ -186,7 +186,7 @@ public class RoleServiceImpl implements RoleService {
         List<RoleResource> relationList = roleResourceService.findAll();
         for (Resource resource : resourceList) {
             Set<Integer> roleIds = relationList.stream().filter(item -> item.getResourceId().equals(resource.getId())).map(RoleResource::getRoleId).collect(Collectors.toSet());
-            List<String> roleNames = roleList.stream().filter(item -> roleIds.contains(item.getId())).map(item -> item.getId() + "_" + item.getName()).collect(Collectors.toList());
+            List<String> roleNames = roleList.stream().filter(item -> roleIds.contains(item.getId())).map(item -> item.getEnName()).collect(Collectors.toList());
             resourceRoleMap.put("/" + applicationName + resource.getUrl(), roleNames);
         }
         redisTemplate.delete(AuthConstant.RESOURCE_ROLES_MAP_KEY);
