@@ -48,7 +48,7 @@ public class AuthorizationManager implements ReactiveAuthorizationManager<Author
 
         // 2. token为空拒绝访问
         String token = request.getHeaders().getFirst(AuthConstant.JWT_TOKEN_HEADER);
-        if (Strings.isNotEmpty(token)) {
+        if (!Strings.isNotEmpty(token)) {
             return Mono.just(new AuthorizationDecision(false));
         }
 
