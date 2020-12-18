@@ -218,7 +218,7 @@ public class UserServiceImpl implements UserService {
         UserDTO userDto = new UserDTO();
         List<Role> roleList = roleService.findRoleList(user.getId());
         if (null != roleList && !roleList.isEmpty()) {
-            List<String> roleStrList = roleList.stream().map(item -> item.getId() + "_" + item.getEnName()).collect(Collectors.toList());
+            List<String> roleStrList = roleList.stream().map(item ->item.getEnName()).collect(Collectors.toList());
             userDto.setRoles(roleStrList);
         }
         BeanUtils.copyProperties(user, userDto);
