@@ -76,14 +76,14 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
-        clients.withClientDetails(clientDetailsService);
-//        clients.inMemory()
-//                .withClient("client-app")
-//                .secret(new BCryptPasswordEncoder().encode("123456"))
-//                .scopes("all")
-//                .authorizedGrantTypes("password", "refresh_token")
-//                .accessTokenValiditySeconds(3600)
-//                .refreshTokenValiditySeconds(86400);
+//        clients.withClientDetails(clientDetailsService);
+        clients.inMemory()
+                .withClient("admin-app")
+                .secret(new BCryptPasswordEncoder().encode("123456"))
+                .scopes("all")
+                .authorizedGrantTypes("password", "refresh_token")
+                .accessTokenValiditySeconds(3600)
+                .refreshTokenValiditySeconds(86400);
     }
 
     @Override

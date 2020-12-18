@@ -52,7 +52,7 @@ public class UserController {
     public ResultEntity currentLoginUser() {
         User user = userService.findCurrentUser();
         Map<String, Object> data = Maps.newHashMap();
-        data.put("username", user.getUserName());
+        data.put("username", user.getUsername());
         data.put("menus", userService.findMenuList(user.getId()));
         data.put("icon", user.getIcon());
 

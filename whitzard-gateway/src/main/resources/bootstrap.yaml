@@ -28,14 +28,10 @@ spring:
         - "/doc.html"
         - "/swagger-resources/**"
         - "/swagger/**"
-        - "/**/v2/api-docs"
-        - "/**/*.js"
-        - "/**/*.css"
-        - "/**/*.png"
-        - "/**/*.ico"
-        - "/webjars/springfox-swagger-ui/**"
+        - "/*/v2/api-docs"
+        - "/webjars/**"
         - "/actuator/**"
-        - "/**/oauth/token"
+        - "/favicon.ico"
         - "/whitzard-auth/oauth/token"
         - "/whitzard-auth/rsa/publicKey"
         - "/whitzard-admin/user/login"
@@ -72,3 +68,7 @@ swagger:
   enabled: false
   title:
   base-package: com.newpi.data.controller
+
+ribbon:
+  ReadTimeout: 30000
+  ConnectTimeout: 30000

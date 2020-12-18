@@ -1,6 +1,7 @@
 package com.newpi.data.dao;
 
 import com.newpi.data.entity.User;
+import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
 import org.springframework.stereotype.Repository;
 
@@ -20,6 +21,6 @@ public interface UserDao extends CrudRepository<User, Integer> {
      *
      * @return
      */
-    User findByUserName(String username);
+    User findByUsername(String username);
 
 }

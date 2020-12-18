@@ -10,6 +10,8 @@ import org.springframework.stereotype.Component;
 import java.util.HashMap;
 import java.util.Map;
 
+import static com.newpi.data.constant.AuthConstant.EMAIL_HEADER;
+
 /**
  * JWT内容增强器
  * Created by macro on 2020/6/19.
@@ -21,7 +23,7 @@ public class JwtTokenEnhancer implements TokenEnhancer {
         SecurityUser securityUser = (SecurityUser) authentication.getPrincipal();
         Map<String, Object> info = new HashMap<>();
         //把用户email设置到JWT中
-        info.put("email", securityUser.getEmail());
+        info.put(EMAIL_HEADER, securityUser.getEmail());
         info.put("client_id", securityUser.getClientId());
         ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(info);
         return accessToken;

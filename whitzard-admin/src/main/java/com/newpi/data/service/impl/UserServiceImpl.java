@@ -96,7 +96,7 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User findByUsername(String username) {
-        User user = userDao.findByUserName(username);
+        User user = userDao.findByUsername(username);
         return user;
     }
 
@@ -212,13 +212,13 @@ public class UserServiceImpl implements UserService {
     @Override
     public UserDTO loadUserByUsername(String username) {
         User user = findByUsername(username);
-        if (null != user) {
+        if (null == user) {
             throw new WhitzardException(ResultCode.USER_NOT_FOUND);
         }
         UserDTO userDto = new UserDTO();
         List<Role> roleList = roleService.findRoleList(user.getId());
         if (null != roleList && !roleList.isEmpty()) {
-            List<String> roleStrList = roleList.stream().map(item -> item.getId() + "_" + item.getName()).collect(Collectors.toList());
+            List<String> roleStrList = roleList.stream().map(item -> item.getId() + "_" + item.getEnName()).collect(Collectors.toList());
             userDto.setRoles(roleStrList);
         }
         BeanUtils.copyProperties(user, userDto);

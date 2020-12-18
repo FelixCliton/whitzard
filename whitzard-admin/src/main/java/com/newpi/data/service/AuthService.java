@@ -16,6 +16,11 @@ import java.util.Map;
 @FeignClient("whitzard-auth")
 public interface AuthService {
 
+    /**
+     *
+     * @param parameters
+     * @return
+     */
     @PostMapping(value = "/oauth/token")
     ResultEntity getAccessToken(@RequestParam Map<String, String> parameters);
 

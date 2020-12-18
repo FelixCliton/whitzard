@@ -1,7 +1,6 @@
 package com.newpi.data.authorization;
 
 import com.newpi.data.constant.AuthConstant;
-import com.newpi.data.constant.RedisConstant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.security.authorization.AuthorizationDecision;
@@ -15,6 +14,8 @@ import reactor.core.publisher.Mono;
 import java.net.URI;
 import java.util.List;
 import java.util.stream.Collectors;
+
+import static com.newpi.data.constant.AuthConstant.RESOURCE_ROLES_MAP_KEY;
 
 /**
  * 鉴权管理器，用于判断是否有资源的访问权限
@@ -31,7 +32,7 @@ public class AuthorizationManager implements ReactiveAuthorizationManager<Author
     public Mono<AuthorizationDecision> check(Mono<Authentication> mono, AuthorizationContext authorizationContext) {
         //从Redis中获取当前路径可访问角色列表
         URI uri = authorizationContext.getExchange().getRequest().getURI();
-        List<String> authorities = (List<String>) redisTemplate.opsForHash().get(RedisConstant.RESOURCE_ROLES_MAP, uri.getPath());
+        List<String> authorities = (List<String>) redisTemplate.opsForHash().get(RESOURCE_ROLES_MAP_KEY, uri.getPath());
 
         authorities = authorities.stream().map(i -> i = AuthConstant.AUTHORITY_PREFIX + i).collect(Collectors.toList());
         //认证通过且角色匹配的用户可访问当前路径

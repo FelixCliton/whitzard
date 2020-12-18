@@ -1,6 +1,7 @@
 package com.newpi.data.service;
 
 import com.newpi.data.domain.UserDTO;
+import com.newpi.data.model.ResultEntity;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -19,8 +20,8 @@ public interface MemberUserService {
      * @param userName
      * @return
      */
-    @GetMapping("admin/loadByUsername")
-    UserDTO loadUserByUsername(@RequestParam("username") String userName);
+    @GetMapping("user/loadByUsername")
+    ResultEntity<UserDTO> loadUserByUsername(@RequestParam("username") String userName);
 
 
 }

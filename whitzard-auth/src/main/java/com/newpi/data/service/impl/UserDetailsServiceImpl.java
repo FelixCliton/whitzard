@@ -43,9 +43,9 @@ public class UserDetailsServiceImpl implements UserDetailsService {
         String clientId = request.getParameter("client_id");
         UserDTO userDto;
         if (AuthConstant.ADMIN_CLIENT_ID.equals(clientId)) {
-            userDto = adminUserService.loadUserByUsername(username);
+            userDto = adminUserService.loadUserByUsername(username).getData();
         } else {
-            userDto = memberUserService.loadUserByUsername(username);
+            userDto = memberUserService.loadUserByUsername(username).getData();
         }
         if (userDto == null) {
             throw new UsernameNotFoundException(MessageConstant.USERNAME_PASSWORD_ERROR);
