@@ -15,7 +15,7 @@ import javax.persistence.*;
 @Data
 @Accessors(chain = true)
 @Entity
-@Table(name = "role_resource")
+@Table(name = "role_menu")
 public class RoleMenu {
 
     @Id

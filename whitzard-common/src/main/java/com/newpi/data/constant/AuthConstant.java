@@ -11,7 +11,6 @@ public class AuthConstant {
     /**
      * JWT存储权限前缀
      */
-//   public static final String AUTHORITY_PREFIX = "ROLE_";
    public static final String AUTHORITY_PREFIX = "";
 
     /**
