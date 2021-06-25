@@ -24,7 +24,7 @@
 
         <dependency>
             <groupId>com.newpi.data</groupId>
-            <artifactId>whitzard-mbg</artifactId>
+            <artifactId>whitzard-dao</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
 

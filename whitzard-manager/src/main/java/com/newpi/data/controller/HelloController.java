@@ -1,9 +1,6 @@
 package com.newpi.data.controller;
 
 import com.google.common.base.Strings;
-import com.newpi.data.enums.ResultCode;
-import com.newpi.data.exception.WhitzardException;
-import lombok.NonNull;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -27,9 +24,27 @@ public class HelloController {
 
     @GetMapping("sayHi")
     public String sayHi(@RequestParam("name") String name) {
-        if(Strings.isNullOrEmpty(name)){
+        if (Strings.isNullOrEmpty(name)) {
             throw new RuntimeException();
         }
         return "hi";
+    }
+
+    @GetMapping("hpa-test-cpu")
+    public String hpaTestCpu() {
+        float x = 0.0001F;
+        for (int i = 0; i <= 1000000; i++) {
+            x += Math.sqrt(x);
+        }
+        return "OK!";
+    }
+
+    @GetMapping("hpa-test-cpu")
+    public String hpaTestMemory() {
+        float x = 0.0001F;
+        for (int i = 0; i <= 1000000; i++) {
+            x += Math.sqrt(x);
+        }
+        return "OK!";
     }
 }

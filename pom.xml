@@ -16,7 +16,7 @@
         <module>whitzard-scheduler</module>
         <module>whitzard-manager</module>
         <module>whitzard-admin</module>
-        <module>whitzard-mbg</module>
+        <module>whitzard-dao</module>
     </modules>
 
     <parent>
