@@ -64,6 +64,11 @@
                 <version>${spring-boot.version}</version>
             </dependency>
             <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-sleuth</artifactId>
+                <version>${spring-boot.version}</version>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-starter-data-jpa</artifactId>
                 <version>${spring-boot.version}</version>
@@ -122,18 +127,5 @@
             </dependency>
         </dependencies>
     </dependencyManagement>
-
-    <distributionManagement>
-        <snapshotRepository>
-            <id>yidian-repo-snapshot</id>
-            <name>yidian Snapshot Repository</name>
-            <url>http://artifactory.yidian.com:8081/artifactory/libs-snapshot-local</url>
-        </snapshotRepository>
-        <repository>
-            <id>yidian-repo</id>
-            <name>yidian release Repository</name>
-            <url>http://artifactory.yidian.com:8081/artifactory/libs-release-local</url>
-        </repository>
-    </distributionManagement>
 
 </project>

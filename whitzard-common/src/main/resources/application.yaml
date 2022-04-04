@@ -1,8 +1,8 @@
 spring:
   redis:
     database: 0
-    port: 32379
-    host: 10.103.18.42
+    port: 6379
+    host: localhost
     timeout: 10s
 
 swagger:

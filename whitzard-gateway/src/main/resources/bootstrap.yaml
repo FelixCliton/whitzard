@@ -2,7 +2,7 @@ server:
   port: 8001
   namespace:
     name: whitzard
-    id: 76ee77bd-b7d7-4a9d-94d2-fab208c237be
+    id: fa65dfdc-c601-417e-9c14-76b0a3bac095
 
 spring:
   profiles:
@@ -15,9 +15,9 @@ spring:
     show-sql: true
   datasource:
     name: whitzard-ds
-    url: jdbc:mysql://10.103.18.42:32306/whitzard?useUnicode=true&characterEncoding=utf8
+    url: jdbc:mysql://localhost:3306/whitzard?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
     username: root
-    password: root
+    password: admin123
   cloud:
     gateway:
       discovery:
@@ -41,12 +41,12 @@ spring:
     nacos:
       discovery:
         enabled: true
-        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        server-addr: http://localhost:8848
         namespace: ${server.namespace.id}
         group: ${spring.profiles.active}
       config:
         enabled: true
-        server-addr: http://nacos.k8sml.test.yidian-inc.com
+        server-addr: http://localhost:8848
         namespace: ${server.namespace.id}
         group: ${spring.profiles.active}
         file-extension: yaml
