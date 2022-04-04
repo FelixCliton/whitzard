@@ -9,35 +9,7 @@ spring:
     active: dev
   application:
     name: whitzard-gateway
-  jpa:
-    hibernate:
-      ddl-auto: update
-    show-sql: true
-  datasource:
-    name: whitzard-ds
-    url: jdbc:mysql://localhost:3306/whitzard?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
-    username: root
-    password: admin123
   cloud:
-    gateway:
-      discovery:
-        locator:
-          enabled: true
-          lower-case-service-id: true
-      whiteList:
-        - "/doc.html"
-        - "/swagger-resources/**"
-        - "/swagger/**"
-        - "/*/v2/api-docs"
-        - "/webjars/**"
-        - "/actuator/**"
-        - "/favicon.ico"
-        - "/whitzard-auth/oauth/token"
-        - "/whitzard-auth/rsa/publicKey"
-        - "/whitzard-admin/user/login"
-        - "/whitzard-admin/user/register"
-      blackList:
-
     nacos:
       discovery:
         enabled: true
@@ -51,11 +23,6 @@ spring:
         group: ${spring.profiles.active}
         file-extension: yaml
         refresh-enabled: true #开启动态刷新
-  security:
-    oauth2:
-      resourceserver:
-        jwt:
-          jwk-set-uri: http://10.103.18.42:32082/rsa/publicKey
 
 
 management:
@@ -63,12 +30,3 @@ management:
     web:
       exposure:
         include: "*"
-
-swagger:
-  enabled: false
-  title:
-  base-package: com.newpi.data.controller
-
-ribbon:
-  ReadTimeout: 30000
-  ConnectTimeout: 30000
