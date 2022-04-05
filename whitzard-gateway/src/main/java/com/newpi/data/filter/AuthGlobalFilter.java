@@ -40,7 +40,7 @@ public class AuthGlobalFilter implements GlobalFilter, Ordered {
             JWSObject jwsObject = JWSObject.parse(realToken);
             String userStr = jwsObject.getPayload().toString();
             String email = JSONObject.parseObject(userStr).getString(EMAIL_HEADER);
-            String username = JSONObject.parseObject(userStr).getString(EMAIL_HEADER);
+            String username = JSONObject.parseObject(userStr).getString(USER_NAME_HEADER);
             ServerHttpRequest request = exchange.getRequest().mutate()
                     .header(EMAIL_HEADER, email)
                     .header(USER_NAME_HEADER, username)

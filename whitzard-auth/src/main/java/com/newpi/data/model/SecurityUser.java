@@ -67,6 +67,7 @@ public class SecurityUser implements UserDetails {
 
     public SecurityUser(UserDTO userDto) {
         BeanUtils.copyProperties(userDto, this);
+        this.userName = userDto.getUsername();
         if (userDto.getRoles() != null) {
             authorities = new ArrayList<>();
             userDto.getRoles().forEach(item -> authorities.add(new SimpleGrantedAuthority(item)));

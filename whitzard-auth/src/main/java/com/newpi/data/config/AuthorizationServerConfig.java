@@ -2,11 +2,13 @@ package com.newpi.data.config;
 
 import com.newpi.data.component.JwtTokenEnhancer;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceProperties;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.boot.jdbc.DataSourceBuilder;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.context.annotation.Lazy;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -37,15 +39,14 @@ import java.util.List;
  */
 @Configuration
 @EnableAuthorizationServer
+@Lazy
 public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdapter {
-
-//    @Autowired
-//    private PasswordEncoder passwordEncoder;
 
     @Autowired
     private DataSourceProperties dataSourceProperties;
 
     @Autowired
+    @Qualifier(value = "jdbcClientDetailsService")
     private ClientDetailsService clientDetailsService;
 
     @Autowired
@@ -68,7 +69,7 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
                 .build();
     }
 
-    @Bean
+    @Bean(value = "jdbcClientDetailsService")
     public ClientDetailsService jdbcClientDetailsService() {
         return new JdbcClientDetailsService(dataSource());
     }
@@ -76,14 +77,14 @@ public class AuthorizationServerConfig extends AuthorizationServerConfigurerAdap
     @Override
     public void configure(ClientDetailsServiceConfigurer clients) throws Exception {
 
-//        clients.withClientDetails(clientDetailsService);
-        clients.inMemory()
-                .withClient("admin-app")
-                .secret(new BCryptPasswordEncoder().encode("123456"))
-                .scopes("all")
-                .authorizedGrantTypes("password", "refresh_token")
-                .accessTokenValiditySeconds(3600)
-                .refreshTokenValiditySeconds(86400);
+        clients.withClientDetails(clientDetailsService);
+//        clients.inMemory()
+//                .withClient("admin-app")
+//                .secret(new BCryptPasswordEncoder().encode("123456"))
+//                .scopes("all")
+//                .authorizedGrantTypes("password", "refresh_token")
+//                .accessTokenValiditySeconds(3600)
+//                .refreshTokenValiditySeconds(86400);
     }
 
     @Override

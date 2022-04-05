@@ -11,6 +11,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 import static com.newpi.data.constant.AuthConstant.EMAIL_HEADER;
+import static com.newpi.data.constant.AuthConstant.USER_NAME_HEADER;
 
 /**
  * JWT内容增强器
@@ -24,6 +25,7 @@ public class JwtTokenEnhancer implements TokenEnhancer {
         Map<String, Object> info = new HashMap<>();
         //把用户email设置到JWT中
         info.put(EMAIL_HEADER, securityUser.getEmail());
+        info.put(USER_NAME_HEADER, securityUser.getUsername());
         info.put("client_id", securityUser.getClientId());
         ((DefaultOAuth2AccessToken) accessToken).setAdditionalInformation(info);
         return accessToken;
