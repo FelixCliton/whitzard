@@ -1,5 +1,5 @@
 server:
-  port: 8001
+  port: 8008
   namespace:
     name: whitzard
     id: fa65dfdc-c601-417e-9c14-76b0a3bac095
@@ -9,6 +9,15 @@ spring:
     active: dev
   application:
     name: whitzard-gateway
+  jpa:
+      hibernate:
+        ddl-auto: update
+      show-sql: true
+  datasource:
+    name: whitzard-ds
+    url: jdbc:mysql://localhost:3306/whitzard?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC
+    username: root
+    password: admin123
   cloud:
     nacos:
       discovery:
@@ -17,14 +26,44 @@ spring:
         namespace: ${server.namespace.id}
         group: ${spring.profiles.active}
       config:
-        enabled: true
+        enabled: false
         server-addr: http://localhost:8848
         namespace: ${server.namespace.id}
         group: ${spring.profiles.active}
         file-extension: yaml
         refresh-enabled: true #开启动态刷新
-
-
+    gateway:
+      whiteList:
+        - "/doc.html"
+        - "/swagger-resources/**"
+        - "/swagger/**"
+        - "/*/v2/api-docs"
+        - "/webjars/**"
+        - "/actuator/**"
+        - "/favicon.ico"
+        - "/whitzard-auth/oauth/token"
+        - "/whitzard-auth/rsa/publicKey"
+        - "/whitzard-admin/user/login"
+        - "/whitzard-admin/user/register"
+      blackList:
+      routes:
+      - id: whitzard-auth
+        uri: lb://whitzard-auth
+        predicates:
+        - Path=/whitzard-auth/**
+        filters:
+        - StripPrefix=1
+      - id: whitzard-admin
+        uri: lb://whitzard-admin
+        predicates:
+        - Path=/whitzard-admin/**
+        filters:
+        - StripPrefix=1
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: http://localhost:8001/whitzard-auth/rsa/publicKey
 management:
   endpoints:
     web:

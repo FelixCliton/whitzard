@@ -31,7 +31,7 @@ public class SecurityUser implements UserDetails {
 
     private String clientId;
 
-    List<GrantedAuthority> authorities;
+    private List<GrantedAuthority> authorities;
 
     private Boolean accountExpired;
 
